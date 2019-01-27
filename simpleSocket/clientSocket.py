@@ -1,16 +1,10 @@
-# Import socket module 
+# Echo client program
 import socket
 
-# Create a socket object 
-s = socket.socket()
-
-# Define the port on which you want to connect 
-port = 5500
-
-# connect to the server on local computer 
-s.connect(('127.0.0.1', port))
-
-# receive data from the server 
-print(s.recv(1024))
-# close the connection 
-s.close() 
+HOST = 'ec2-3-92-77-8.compute-1.amazonaws.com'    # The remote host
+PORT = 5500              # The same port as used by the server
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    s.sendall(b'Hello, world')
+    data = s.recv(1024)
+print('Received', repr(data))
