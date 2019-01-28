@@ -25,9 +25,11 @@
       <file leaf-file-name="serverSocket.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serverSocket.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="348">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="e#22#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,8 +48,8 @@
       <list>
         <option value="$PROJECT_DIR$/socket.py" />
         <option value="$PROJECT_DIR$/openSocket.py" />
-        <option value="$PROJECT_DIR$/serverSocket.py" />
         <option value="$PROJECT_DIR$/clientSocket.py" />
+        <option value="$PROJECT_DIR$/serverSocket.py" />
       </list>
     </option>
   </component>
@@ -226,9 +228,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serverSocket.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="348">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#22#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
