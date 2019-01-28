@@ -8,9 +8,9 @@ app.config["DEBUG"] = True
 # def home():
 #     return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
 
-@app.route('/',  methods=['GET'])
-def home():
-    return flask.send_from_directory('/home/ubuntu/NetworkMeasurement/API/test.txt')
+@app.route('/uploads/<path:filename>',  methods=['GET'])
+def home(filename):
+    return flask.send_from_directory('/home/ubuntu/NetworkMeasurement/API/test.txt',filename)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
