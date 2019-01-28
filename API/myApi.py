@@ -14,7 +14,7 @@ app.config["DEBUG"] = True
 #                                      filename,
 #                                      as_attachment=True)
 
-@app.route('/API/')
+@app.route('/')
 def return_files_tut():
     try:
         return flask.send_file('/home/ubuntu/NetworkMeasurement/API/',
