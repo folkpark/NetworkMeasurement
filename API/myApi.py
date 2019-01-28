@@ -10,7 +10,7 @@ app.config["DEBUG"] = True
 
 @app.route('/',  methods=['GET'])
 def home():
-    return app.send_static_file('/NetworkMeasurement/API/test.txt')
+    return flask.send_from_directory('/home/ubuntu/NetworkMeasurement/API/test.txt')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
