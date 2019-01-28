@@ -10,7 +10,9 @@ app.config["DEBUG"] = True
 
 @app.route('/uploads/<path:filename>')
 def home(filename):
-    return flask.send_from_directory('/home/ubuntu/NetworkMeasurement/API/test.txt',filename)
+    return flask.send_from_directory(app.config['/home/ubuntu/NetworkMeasurement/API/test.txt'],
+                                     filename,
+                                     as_attachment=True)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
